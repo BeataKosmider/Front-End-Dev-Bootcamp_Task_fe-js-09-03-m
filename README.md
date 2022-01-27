@@ -1,9 +1,14 @@
-# Lekcja 4
-## Zadanie 1 - pro
-Stwórz funkcję `createButton` tworzącą element `<button>` o identyfikatorze `"super-button"`, dowolnej nazwie w środku i dodaj go do elementu `<body>`. Funkcja powinna także zwracać tego buttona. Następnie stwórz funkcję `openAlert`, która będzie uruchamiała wbudowaną funkcję `window.alert` z tekstem `"super"`. Funkcja `openAlert` powinna zostać wywołana w momencie kliknięcia na utworzony przycisk `"super-button"`.
+# 9.3
 
-Przykładowy input:
-Brak
+W pliku index.js znajdziesz dane studentów, do których musisz dopisać dwie update'ujące funkcje.
 
-Przykładowy output:
-Element `<button id="super-button">` wraz z pozostałymi założeniami
+- setStudentName
+  - inputem ma być `studentId` (String (uuid)) oraz `newName` (String)
+  - outputem array wszystkich studentów (po zmianie wybranego studenta)
+  - funkcja skorzysta z array `students` oraz metody `.map`
+- addStudent
+  - inputem ma być obiekt literalny `newStudent` nowego studenta z następującymi kluczami:
+    - `studentId` (String (uuid))
+    - `newName` (String)
+    - `age` (Number)
+  - outputem array wszystkich studentów (po dodaniu nowego studenta)

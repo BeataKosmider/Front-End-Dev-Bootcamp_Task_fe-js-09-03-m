@@ -1,25 +1,27 @@
 {
-  "name": "lesson4-task5",
+  "name": "9.3",
   "version": "1.0.0",
-  "description": "Fifth task for fourth JS module",
+  "description": "9.3",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/pawel.ochota/lesson4-task5.git"
+    "url": "git+ssh://git@gitlab.portal.futurecollars.com:root/fe-js-09-03-m.git"
   },
-  "author": "Paweł Ochota",
+  "author": "Mikolaj Kubera",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/pawel.ochota/lesson4-task5/issues"
+    "url": "https://gitlab.portal.futurecollars.com/root/fe-js-09-03-m/issues"
   },
-  "homepage": "https://gitlab.com/pawel.ochota/lesson4-task5#readme",
+  "homepage": "https://gitlab.portal.futurecollars.com/root/fe-js-09-03-m/blob/master/README.md",
   "private": true,
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.3.0",
-    "jest": "25.1.0",
-    "jest-junit": "^10.0.0"
+    "@babel/plugin-transform-modules-commonjs": "7.16.8",
+    "jest": "27.4.7",
+    "jest-junit": "13.0.0",
+    "uuid": "8.3.2"
   },
   "scripts": {
     "test": "jest --watchAll"
