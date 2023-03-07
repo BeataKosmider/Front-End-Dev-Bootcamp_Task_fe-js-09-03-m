@@ -1,7 +1,4 @@
-import { v4 as uuidv4 } from "uuid"; // wykorzystujemy bardzo popularną bibliotekę uuid, która tworzy dla nas id w formacie uuid4 (https://www.npmjs.com/package/uuid) (https://en.wikipedia.org/wiki/Universally_unique_identifier)
-// przykładowe uuid: '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
-
-// Data
+import { v4 as uuidv4 } from "uuid";
 const students = [
   {
     id: uuidv4(),
@@ -15,12 +12,16 @@ const students = [
   },
 ];
 
-// Funkcje
 const setStudentName = (studentId, newName) => {
-  // tutaj Twoj kod
+  const newStudents = students.map((student) =>
+    student.id === studentId ? { ...student, name: newName } : student
+  );
+  console.log(students);
+  return newStudents;
 };
 const addStudent = (newStudent) => {
-  // tutaj Twoj kod
+  const newStudents = [...students, newStudent];
+  return newStudents;
 };
 
 export { students, setStudentName, addStudent };
