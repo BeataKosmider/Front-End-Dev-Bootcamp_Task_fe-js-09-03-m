@@ -16,7 +16,6 @@ const setStudentName = (studentId, newName) => {
   const newStudents = students.map((student) =>
     student.id === studentId ? { ...student, name: newName } : student
   );
-  console.log(students);
   return newStudents;
 };
 const addStudent = (newStudent) => {
