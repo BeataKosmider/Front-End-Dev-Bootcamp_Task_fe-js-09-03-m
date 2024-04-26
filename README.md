@@ -1,4 +1,5 @@
-# 9.3
+# Task performed during Front-End Developer Bootcamp 
+## 9.3
 
 W pliku index.js znajdziesz dane studentów, do których musisz dopisać dwie update'ujące funkcje.
 
